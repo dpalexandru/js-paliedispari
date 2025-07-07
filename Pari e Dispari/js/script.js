@@ -18,3 +18,16 @@ console.log("Il numero dell'avversario è: ",numeroPc);
 const totale = numeroUtente + numeroPc;
 console.log("Il totale delle vostre giocate è: ",totale);
 
+//funzione per stabile se il numero è pari o dispari 
+function checkPariDispari (num) {
+  let risultatoControllo = " ";
+  if (num %2 === 0) {
+    risultatoControllo = 'pari'; 
+  } else {
+    risultatoControllo = 'dispari'; 
+  }
+  return risultatoControllo;
+}
+
+const risultatoFInale = checkPariDispari(totale); 
+console.log(risultatoFInale);
