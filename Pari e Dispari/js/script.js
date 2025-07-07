@@ -3,3 +3,12 @@ const pariODispari = prompt("Scegli pari o dispari")
 const numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5"))
 
 console.log(`Hai scelto ${pariODispari} e il numero ${numeroUtente}`)
+
+// generiamo numero random per computer e stampiamo per test
+function numeroRandom() {
+  const numeroCasuale = Math.floor(Math.random() * 5) + 1;
+  return numeroCasuale;
+}
+
+const numeroPc = numeroRandom();
+console.log(numeroPc);
