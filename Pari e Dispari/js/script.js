@@ -29,5 +29,16 @@ function checkPariDispari (num) {
   return risultatoControllo;
 }
 
+//stabiliamo se l'utente ha vinto o perso
 const risultatoFInale = checkPariDispari(totale); 
-console.log(risultatoFInale);
+
+if (pariODispari === risultatoFInale) {
+  console.log('=========================')
+  console.log('Hai vinto 20.000 $$$$$')
+  console.log('=========================')
+
+} else {
+  console.log('=========================')
+  console.log('VInce il banco!!!!!!')
+  console.log('=========================')
+}
